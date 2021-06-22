@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My sport Teams</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/site.css">
+
+</head>
+
+<body>
+
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+   
+    <div data-role="page" id="home">
+        <!-- header -->
+        <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
+            <ul>
+                <li><a href="#add">Add Teams</a></li>
+                <li><a href="#display">List All teams</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->    
+            <h2>Welcome</h2>
+        </div>
+    
+        <!-- content -->
+        <div data-role="content" data-theme='b'>
+            <h3>My sports teams</h3>
+            <h3>You save and maintain details of your favorite sport team</h3>
+            <img class="center" id="image1" src="./images/sports.jpg" alt="picture of sport balls" class="center" >
+        </div>
+
+        
+    
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='e'>
+            <h1> &copy; 2021 Mario</h1>
+        </div>
+    </div>
+
+<!-- *******************************************************************************************-->
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+
+    <div data-role="page" id="add">
+        <!-- header -->
+        <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
+            <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#display">List All Teams</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->
+        
+            <h2>Add a team</h2>
+            <img class="center" id="image1" src="./images/sports.jpg" alt="picture of sport balls" class="center" >
+            
+        </div>
+    
+        <!-- content -->
+        <div data-role="content" data-theme='b'>
+        <label for="select-type">Select the sport</label>
+        <select name="select-type" id="select-type">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Soccer">Soccer</option>
+            <option value="Football">Football</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Baseball">Baseball</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Volleyball">VolleyBall</option>
+        </select>
+
+       
+            Enter Sports Team Name <br />
+        <input type="text" value="" id="teamname" />
+
+            Enter Team Player Name <br />
+        <input type="text" value="" id="playername" />
+
+            Year founded <br />
+        <input type="text" value="" id="year" />
+
+        Enter Team's official website URL<br/>
+        <input type="text" value="" id="URL" />
+
+
+        
+        <input type="button" value="Save" id="buttonSave" />
+    
+        <input type="button" value="Clear" id="buttonClear" />
+
+        </div>
+
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='e'>
+            <h1> &copy; 2021 Mario</h1>
+        </div>
+    </div>
+
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+
+    <div data-role="page" id="display">   
+        <!-- header -->
+        <div data-role="header" data-theme='a'>
+            <div data-role="navbar" data-theme='a'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#add">Add Details</a></li>
+                    
+                </ul>
+    </div><!-- /navbar -->
+
+            <h2>My team list</h2>
+            <img class="center" id="image1" src="./images/sports.jpg" alt="picture of sport balls" class="center" >
+        </div>
+    
+        <!-- content -->
+        <div data-role="content" data-theme='b'>
+            <p> Here are my teams: </p>
+            
+        
+           <ul id="myul"></ul>
+          
+        </div>
+    
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='e'>
+            <h1> &copy; 2021 Mario</h1>
+        </div>
+    </div>
+
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+<div data-role="page" id="details">   
+    <!-- header -->
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
+            <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#add">Add Details</a></li>
+                <li><a href="#display">List All Teams</a></li>
+                
+            </ul>
+</div><!-- /navbar -->
+
+        <h2>My team list</h2>
+        <img class="center" id="image1" src="./images/sports.jpg" alt="picture of sport balls" class="center" >
+    </div>
+
+    <!-- content -->
+    <div data-role="content" data-theme='b'>
+        <p> Here are the details</p>
+      <p id="oneSport"></p>
+      <p id="oneTname"></p>
+      <p id="onePname"></p>
+      <p id="oneYear"></p>
+      <p id="oneURL" hidden></p>
+      <input type="button" value="Offical website" id="website" />
+    
+       
+      
+    </div>
+
+    <!-- notes footer -->
+    <div data-role="footer" data-theme='e'>
+        <h1> &copy; 2021 Mario</h1>
+    </div>
+</div>
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->
+<!-- ******************************************************************************************* -->   
+
+
+</body>
+
+</html>
